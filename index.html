@@ -22,6 +22,51 @@ p {font-family: "Courier New";}
     <br>
     <div style="text-align: center;">
         <img width="400" src="arbol_fractal.jpg">
-    </div>
+
+        
+</div><!-- Botón de redirección - Insertar dentro del body de tu HTML existente -->
+<div class="aws-redirect-button-container">
+  <button id="awsRedirectButton" class="aws-redirect-button">Ir a la Documentación</button>
+</div>
+
+<!-- Estilos para el botón - Insertar en head o en tus estilos CSS -->
+<style>
+  .aws-redirect-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .aws-redirect-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .aws-redirect-button:hover {
+    background-color: #e88b00;
+  }
+  
+  .aws-redirect-button:active {
+    transform: translateY(1px);
+  }
+</style>
+
+<!-- Script para la funcionalidad del botón - Insertar antes del cierre del body -->
+<script>
+  document.getElementById('awsRedirectButton').addEventListener('click', function() {
+    // Cambia esta URL a tu destino deseado
+    const redirectUrl = 'https://aws.amazon.com/amplify/';
+    window.location.href = redirectUrl;
+  });
+</script>
 </body>
 </html>
